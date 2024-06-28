@@ -5,24 +5,26 @@ import CustomButton from "../component/CustomButton";
 import Loader from "../component/Loader";
 import { containerStyle } from "../styles";
 
-const WelcomeImage = require("../../assets/img/welcome.jpg");
+const WelcomeImage = require("../../assets/img/welcome.png");
 
 const Welcome = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   return (
     <>
       {isLoading === false ? (
         <ImageBackground
-          imageStyle={{ opacity: 0.7 }}
+          imageStyle={{ opacity: 0.8 }}
           source={WelcomeImage}
-          style={[containerStyle.container, {}]}>
+          style={[containerStyle.container, {width : "100%" , height : "100%"}]}>
           <Text
             style={{
               fontSize: 48,
               fontWeight: "bold",
-              color: "black",
-              fontFamily: "Inter-Black",
-              backgroundColor: "yellow",
+              color: "white",
+              fontFamily: "inter-black",
+              borderColor: "yellow",
+              backgroundColor: "#2C5F2D",
+              borderWidth: 3,
               paddingHorizontal: 10,
             }}>
             LANGUAGE
@@ -31,16 +33,18 @@ const Welcome = () => {
             style={{
               fontSize: 30,
               fontWeight: "bold",
-              color: "black",
-              fontFamily: "Inter-Black",
+              color: "yellow",
+              fontFamily: "inter-black",
               borderColor: "yellow",
-              borderWidth: 2,
+              backgroundColor: "#008970",
+              borderWidth: 3,
               padding: 12,
+              marginTop: 5,
+              
             }}>
             TRANSLATOR APP
           </Text>
-
-          <View style={{ marginTop: 200 }}>
+           <View style={{ marginTop: 200 }}>
             <CustomButton title={"Get Started"}></CustomButton>
           </View>
         </ImageBackground>
