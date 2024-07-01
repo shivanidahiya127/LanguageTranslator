@@ -10,15 +10,17 @@ import Details from "../../pages/Details";
 const Tab = createMaterialBottomTabNavigator();
 
 const BottomTabNavigation = () => {
-  const [tabBackground, setTabBackground] = useState();
+  const [tabBackground, setTabBackground] = useState("red");
   return (
     <NavigationContainer>
       <Tab.Navigator
         activeColor="black"
         inactiveColor="#3e2465"
         barStyle={{
-          backgroundColor: tabBackground,
-        }}>
+          backgroundColor: "skyblue",
+        }}
+        activeIndicatorStyle={{ backgroundColor: "pink" }}
+      >
         <Tab.Screen
           name="Feed"
           component={Home}
@@ -32,6 +34,7 @@ const BottomTabNavigation = () => {
             tabBarIcon: ({ color }) => (
               <AnDesign name="home" color={color} size={26} />
             ),
+            tabBarColor: "purpule",
           }}
         />
         <Tab.Screen
