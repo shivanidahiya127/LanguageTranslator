@@ -7,7 +7,7 @@ import { containerStyle } from "../styles";
 
 const WelcomeImage = require("../../assets/img/welcome.png");
 
-const Welcome = () => {
+const Welcome = ({ navigation }) => {
   const [isLoading, setIsLoading] = useState(false);
   return (
     <>
@@ -15,13 +15,12 @@ const Welcome = () => {
         <ImageBackground
           imageStyle={{ opacity: 0.8 }}
           source={WelcomeImage}
-          style={[containerStyle.container, {width : "100%" , height : "100%"}]}>
+          style={[containerStyle.container, { width: "100%", height: "100%" }]}>
           <Text
             style={{
               fontSize: 48,
               fontWeight: "bold",
               color: "white",
-              fontFamily: "inter-black",
               borderColor: "yellow",
               backgroundColor: "#2C5F2D",
               borderWidth: 3,
@@ -34,18 +33,18 @@ const Welcome = () => {
               fontSize: 30,
               fontWeight: "bold",
               color: "yellow",
-              fontFamily: "inter-black",
               borderColor: "yellow",
               backgroundColor: "#008970",
               borderWidth: 3,
               padding: 12,
               marginTop: 5,
-              
             }}>
             TRANSLATOR APP
           </Text>
-           <View style={{ marginTop: 200 }}>
-            <CustomButton title={"Get Started"}></CustomButton>
+          <View style={{ marginTop: 200 }}>
+            <CustomButton
+              navigation={navigation}
+              title={"Get Started"}></CustomButton>
           </View>
         </ImageBackground>
       ) : (
