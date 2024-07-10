@@ -86,9 +86,9 @@ const Profile = ({ navigation }) => {
         </View>
         <View style={{ marginTop: 20, alignItems: "center" }}>
           <Text>Teams Email ID's </Text>
-          <Text style={{ color: "blue" }}>anjli3118@gmail.com</Text>
-          <Text style={{ color: "blue" }}>sahotapooja620@gmail.com</Text>
-          <Text style={{ color: "blue" }}>rajunooransh123456789@gmai.com</Text>
+          <Text style={{ color: "blue" }}>kaurk2036@gmail.com</Text>
+          <Text style={{ color: "blue" }}>shivanidahiya91gmail.com</Text>
+          <Text style={{ color: "blue" }}>riyat3197@gmai.com</Text>
         </View>
         <View style={{ marginTop: 20, alignItems: "center" }}>
           <Text>Cordinator Sir Email ID </Text>
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
   profileContainer: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 150,
+    marginTop: 50,
   },
   button: {
     marginTop: 20,

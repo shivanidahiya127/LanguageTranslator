@@ -1,4 +1,5 @@
 import Details from "../../pages/Details";
+import { FontAwesome } from "@expo/vector-icons";
 import Home from "../../pages/Home";
 import { Ionicons } from "@expo/vector-icons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
@@ -31,14 +32,9 @@ const BottomTabNavigation = () => {
         name="Notifications"
         component={Details}
         options={{
-          tabBarLabel: "Favorites",
+          tabBarLabel: "History",
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons
-              onPre
-              name="heart"
-              color={color}
-              size={26}
-            />
+            <FontAwesome name="history" color={color} size={26} />
           ),
         }}
       />
