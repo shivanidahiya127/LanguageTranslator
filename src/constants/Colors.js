@@ -1,0 +1,5 @@
+export const COLORS = {
+  INDICATOR_COLOR: "#6060A0",
+  LABEL_COLOR: "#f54293",
+  TEXT_INPUT_COLOR: "#CBC3E3",
+};
